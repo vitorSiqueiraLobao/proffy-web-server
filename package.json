@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/vitorSiqueiraLobao/proffy-web-server/issues"
   },
-  "homepage": "https://github.com/vitorSiqueiraLobao/proffy-web-server#readme"
+  "homepage": "https://github.com/vitorSiqueiraLobao/proffy-web-server#readme",
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
